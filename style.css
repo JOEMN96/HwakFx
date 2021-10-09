@@ -1,0 +1,1063 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@font-face {
+  font-family: 'Adobe Carlson';
+  src: url(./assets/fonts/ACaslonPro-Bold.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'Avenir LT Pro 35 Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Pro 35 Light'), url('./assets/fonts/AvenirLTProLight.woff') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #323232;
+  /* position: -webkit-sticky; */
+  /* position: sticky; */
+  width: 100%;
+  top: 0;
+  z-index: 11;
+}
+
+.navbar .NavLogofx {
+  display: block;
+  text-align: end;
+}
+
+.navbar .NavLogofx .logoImg {
+  width: 300px;
+}
+
+.navbar .navbar-collapse .navbar-nav {
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.navbar .navbar-collapse .navbar-nav a {
+  color: #a4a4a4 !important;
+  padding: 1.5rem 1rem;
+}
+
+.navbar .navbar-collapse .navbar-nav a:hover {
+  color: white !important;
+}
+
+.navbar .navbar-collapse .navbar-nav .active {
+  color: #e6b70a !important;
+}
+
+@media only screen and (max-width: 2500px) {
+  .NavLogofx {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .NavLogofx {
+    text-align: start !important;
+  }
+  .navbar-collapse .navbar-nav {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .navbar-collapse .navbar-nav a {
+    color: #a4a4a4 !important;
+    padding: 0.2rem 1rem !important;
+  }
+  .mySwiper1 {
+    height: calc(100vh - 59px) !important;
+  }
+  .slider3 {
+    height: 20vh !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .teamSectionCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .teamSectionCard > div:first-child {
+    text-align: center;
+  }
+  .contactMail {
+    font-size: 18px !important;
+  }
+}
+
+nav {
+  -webkit-box-shadow: -10.5px -5.82px 17px 13px rgba(0, 0, 0, 0.6);
+  box-shadow: -10.5px -5.82px 17px 13px rgba(0, 0, 0, 0.6);
+}
+
+.slider3 {
+  margin-top: 40px;
+}
+
+.mySwiper1 {
+  height: calc(100vh - 98px) !important;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.sliderContent {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+  height: 300px;
+}
+
+.sliderContent .SliderContentImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  position: relative;
+}
+
+.sliderContent .SliderContentImg img {
+  width: 30px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.sliderContent .underline::after {
+  content: '';
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  top: 40px;
+  left: 40%;
+  background-color: white;
+}
+
+.sliderContent h5 {
+  font-size: 26px;
+}
+
+.sliderContent .homePlayBtn {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  border: 1px solid white;
+  background: transparent;
+  letter-spacing: 3px;
+  padding: 0px 10px;
+}
+
+.swiper-button-next {
+  color: #cccccc;
+}
+
+.swiper-button-prev {
+  color: #cccccc;
+}
+
+@media only screen and (max-width: 768px) {
+  .sliderContent {
+    left: 50%;
+    top: 60%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    height: auto;
+  }
+  .sliderContent .SliderContentImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-flex: 6;
+    -ms-flex: 6;
+    flex: 6;
+  }
+  .sliderContent .SliderContentImg img {
+    width: 30px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .sliderContent h5 {
+    font-size: 16px;
+  }
+  .sliderContent h1 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .cardSectionMain > .col-md-4 .firstCard {
+    margin: 0 auto;
+  }
+}
+
+.cardSectionMain > .col-md-4 {
+  height: 100%;
+}
+
+.dilogueBox {
+  background-color: #323232;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.dilogueBox h1 {
+  color: #e6b70a !important;
+  padding: 25px 0;
+  letter-spacing: 2px;
+  font-family: 'Adobe Carlson';
+}
+
+.dilogueBox p {
+  color: #a4a4a4 !important;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-family: 'Avenir LT Pro 35 Light';
+}
+
+.cardSection h5 {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.cardSection h5::after {
+  content: '';
+  width: 35px;
+  height: 3px;
+  position: absolute;
+  background-color: #f77930;
+  bottom: 5px;
+  left: 48.6%;
+}
+
+.cardSection .cardSectionMain .col {
+  margin-bottom: 20px;
+}
+
+.cardSection .firstCard {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  --bg-overlay-color: rgb(255, 255, 255);
+  --scale: 1;
+  border-width: 0 0 0 0;
+  border-style: solid solid solid solid;
+  border-color: #b0a986 #b0a986 #b0a986 #b0a986;
+  border-radius: 0 0 0 0;
+  -webkit-box-shadow: 0 4px 10px 0 #d8cccc;
+  box-shadow: 0 4px 10px 0 #d8cccc;
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.cardSection .firstCard img {
+  width: 100%;
+}
+
+.card-content {
+  padding: 0 15px;
+}
+
+.card-content p {
+  text-align: center;
+  margin: 5px 0px 5px 0;
+  font-family: 'Avenir LT Pro 35 Light';
+}
+
+.card-content h4 {
+  text-align: center;
+}
+
+.card-content h3 {
+  text-align: center;
+}
+
+.card-content .cardReadBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.card-content .cardReadBtn p {
+  text-align: start;
+}
+
+.card-content .cardReadBtn h3 {
+  color: #f58144;
+}
+
+.card-content .readbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card-content .readbtn button {
+  background: #36b5cd;
+  color: white;
+  border: 0;
+  padding: 7px 16px;
+}
+
+.card-content .readbtn button:hover {
+  background-color: #5dc0d4;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+}
+
+.AdvisorBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.AdvisorBtn button {
+  background: #36b5cd;
+  color: white;
+  border: 0;
+  padding: 7px 10px;
+}
+
+.AdvisorBtn button:hover {
+  background-color: #5dc0d4;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+}
+
+.allCourseBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.allCourseBtn button {
+  background: #36b5cd;
+  color: white;
+  border: 0;
+  padding: 7px 16px;
+}
+
+.allCourseBtn button:hover {
+  background-color: #5dc0d4;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+}
+
+.headingWithBorder {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.headingWithBorder::after {
+  content: '';
+  width: 35px;
+  height: 3px;
+  position: absolute;
+  background-color: #f77930;
+  bottom: 5px;
+  left: 48.6%;
+}
+
+.teamSection .teamSectionMain {
+  margin: 25px 0px 10vh 0px;
+}
+
+.teamSection h5 {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  font-family: 'Adobe Carlson';
+  font-size: 25px;
+}
+
+.teamSection h5::after {
+  content: '';
+  width: 35px;
+  height: 3px;
+  position: absolute;
+  background-color: #f77930;
+  bottom: 5px;
+  left: 48.6%;
+}
+
+.teamSection .col-md-6 {
+  margin-bottom: 20px;
+}
+
+.teamSectionCard {
+  height: 100%;
+  background: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 20px 0px 0px 20px;
+}
+
+.teamSectionCard .teamSectionCardDetails {
+  width: 100%;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 10px;
+  color: #333333;
+}
+
+.teamSectionCard .teamSectionCardDetails h6 {
+  font-family: 'Avenir LT Pro 35 Light';
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.teamSectionCard .teamSectionCardDetails h4 {
+  font-size: 18px;
+  color: #f77930;
+  font-family: 'EB Garamond', serif;
+}
+
+.teamSectionCard .teamSectionCardDetails p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'EB Garamond', serif;
+  color: #858585;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.teamSectionCard .teamSectionCardDetails p a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #858585;
+}
+
+.teamSectionCard .teamSectionCardDetails .teamSectionImg {
+  display: block;
+  text-align: end;
+}
+
+.teamSectionCard img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.slider2 {
+  height: 70vh;
+  position: relative;
+  margin: 5px 0px;
+}
+
+.slider2 .mySwiper2 {
+  overflow: hidden;
+}
+
+.slider3 {
+  height: 60vh;
+  position: relative;
+  padding: 0px 40px;
+  margin-bottom: 10px;
+}
+
+.slider3 .mySwiper3 {
+  overflow: hidden;
+}
+
+.academyInfoSection h3 {
+  text-align: center;
+  color: #ffc904;
+  letter-spacing: 0.2em;
+  font-size: 20px;
+}
+
+.academyInfoSection h5 {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.academyInfoSection h5::after {
+  content: '';
+  width: 35px;
+  height: 3px;
+  position: absolute;
+  background-color: #f77930;
+  bottom: 5px;
+  left: 48.6%;
+}
+
+.academyInfoSection .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.academyInfoSection .container .row {
+  width: 85%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.academyInfoSection .container .row .col {
+  background-color: #f9f9f9;
+  margin: 5px 0;
+  padding: 5px 0px 0px 30px;
+}
+
+.formArea {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.formArea input {
+  background: #dcdcdc;
+  height: 50px;
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  border-radius: 0;
+  padding-left: 10px;
+  color: black;
+  font-weight: 550;
+  margin: 10px;
+  outline: transparent;
+}
+
+.formArea input:hover {
+  background: #f2e3f8;
+}
+
+.formArea input:focus {
+  background: #f2e3f8;
+  border-bottom: 2px solid #fe6060 !important;
+}
+
+.formArea .col-md-12 {
+  text-align: center;
+}
+
+.formArea .col-md-12 textarea {
+  background: #dcdcdc;
+  border: 1px solid #dcdcdc;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  margin: 10px 10px;
+  outline: transparent;
+  color: black;
+  font-weight: 550;
+}
+
+.formArea .col-md-12 textarea:hover {
+  background: #f2e3f8;
+}
+
+.formArea .col-md-12 textarea:focus {
+  background: #f2e3f8;
+  border-bottom: 2px solid #fe6060 !important;
+}
+
+.formArea .col-md-12 button {
+  background: #fe6060;
+  border: 1px solid #fe6060;
+  padding: 8px 22px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card2Styles {
+  background: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card2Styles .details {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px;
+  color: #333333;
+}
+
+.card2Styles .details p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card2Styles .details a {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #333333;
+}
+
+.card2Styles img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.Requirements p {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 340px) {
+  .card2Styles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+  .cardSection .firstCard {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .logoImg {
+    width: 220px !important;
+  }
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 65px 0 30px 0;
+}
+
+footer .container {
+  max-width: 1300px !important;
+}
+
+footer .container .colms {
+  border-right: 1px solid #ddd;
+}
+
+footer .container .sec1 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer .container .sec1 .title {
+  width: 270px;
+}
+
+footer .container .sec1 .logo2 {
+  width: 300px;
+}
+
+footer .container .sec1 p {
+  margin-top: 30px;
+  color: #1a1a1a;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+footer .container .sec2 p {
+  font-size: 11px;
+  color: #333333;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 600;
+}
+
+footer .container .sec2 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+footer .container .sec2 div ul {
+  padding: 0;
+}
+
+footer .container .sec2 div ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+footer .container .sec2 div ul li a {
+  text-decoration: none;
+  color: #777 !important;
+  text-transform: uppercase;
+  font-size: 10px !important;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer .container .sec2 div ul li a:hover {
+  color: #e6b70a !important;
+}
+
+footer .container .sec3 {
+  padding-left: 30px;
+}
+
+footer .container .sec3 h2 {
+  font-size: 11px !important;
+  line-height: 12px;
+  margin-bottom: 11px;
+  font-weight: bold;
+  color: #333333;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+footer .container .sec3 h2 i {
+  color: #e6b70a;
+  margin-right: 5px;
+}
+
+footer .container .sec3 p {
+  font-size: 10px !important;
+  margin-bottom: 0;
+  line-height: 20px;
+  color: #777777;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer .container .sec4 {
+  padding-left: 30px;
+}
+
+footer .container .sec4 .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0 20px 0px;
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 15px;
+}
+
+footer .container .sec4 .socials a {
+  font-size: 18px;
+  color: #333333;
+  margin-right: 22px;
+  cursor: pointer;
+}
+
+footer .container .sec4 img {
+  width: 150px;
+}
+
+footer .container .sec4 p {
+  margin-top: 15px;
+  font-size: 11px !important;
+  padding-left: 0;
+  color: #1a1a1a;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (min-width: 1200px) {
+  .cardSection .cardSectionMain .firstCard {
+    min-height: 330px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  footer .container .sec1 .title {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  footer .container .sec1 .title {
+    width: 200px;
+  }
+  footer .container .sec2 div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .contactMail {
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  footer .container .sec1 .title {
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer .container .sec1 .title {
+    width: 180px;
+  }
+  footer .container .sec1 .flex {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  footer .container .sec2 {
+    padding-left: 30px;
+  }
+  .emailContact .col-md-6:first-child {
+    border-right: 0 !important;
+  }
+}
+
+.navbar-toggler-icon {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.55);
+  border-color: gray;
+}
+
+.slider3 img {
+  border-radius: 4px;
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+#Services2,
+#Team2,
+#exp1,
+#carrer2 {
+  scroll-margin-top: 90px;
+}
+
+.emailContact .headingWithBorder::after {
+  bottom: 12px;
+  left: 48.5%;
+}
+
+.emailContact > div {
+  text-align: center;
+}
+
+.emailContact > div a {
+  text-decoration: none;
+  color: #e6b70a !important;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 25px;
+  display: block;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+  background: #323232 !important;
+}
+
+footer * {
+  color: white !important;
+}
+
+.teamSectionCard > div:first-child img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.navbar {
+  -webkit-transition: position 2s ease;
+  transition: position 2s ease;
+}
+
+.copyRight {
+  font-size: 12px !important;
+}
+
+.emailContact .col-md-6 h3,
+.emailContact .col-md-12 h3 {
+  font-family: 'Adobe Carlson';
+  font-size: 24px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.emailContact .col-md-6:first-child {
+  border-right: 2px solid #f77930;
+}
+
+/* 9-10-2021 Changes By JoeMn */
+
+nav {
+  position: absolute !important;
+  top: 0 !important;
+  background: transparent !important;
+  box-shadow: none;
+}
+
+.navStylesNew {
+  position: sticky !important;
+  background: #323232 !important;
+  transition: all 0.3s ease;
+  box-shadow: rgb(0 0 0 / 60%) -10.5px -5.82px 17px 13px;
+}
+
+.mySwiper1 {
+  position: relative;
+}
+
+.homePlayBtnNw {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  background-color: rgba(255, 58, 45, 0.01);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  line-height: 23px;
+  font-weight: 700;
+  font-size: 16px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 70px;
+  padding: 5px 24px;
+  z-index: 10;
+}
+
+.homePlayBtnNw a {
+  color: white;
+  text-decoration: none;
+}
+
+.homePlayBtnNw i {
+  margin-left: 5px;
+  vertical-align: middle;
+  padding-bottom: 2px;
+}
+
+.homePlayBtnNw:hover {
+  background-color: #e6b70a;
+  border-color: #e6b70a;
+  transition: all 0.3s ease;
+}
+
+.colms p {
+  margin-top: 7px;
+}
