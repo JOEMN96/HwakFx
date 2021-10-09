@@ -1,5 +1,4 @@
 var swiper1 = new Swiper('.mySwiper1', {
-  cssMode: true,
   loop: true,
   autoplay: true,
   navigation: {

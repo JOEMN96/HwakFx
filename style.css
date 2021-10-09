@@ -871,6 +871,71 @@ footer .container .sec4 p {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* 9-10-2021 Changes By JoeMn */
+
+nav {
+  position: absolute !important;
+  top: 0 !important;
+  background: transparent !important;
+  box-shadow: none;
+}
+
+.navStylesNew {
+  position: sticky !important;
+  background: #323232 !important;
+  transition: all 0.3s ease;
+  box-shadow: rgb(0 0 0 / 60%) -10.5px -5.82px 17px 13px;
+}
+
+.mySwiper1 {
+  position: relative;
+}
+
+.homePlayBtnNw {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  background-color: rgba(255, 58, 45, 0.01);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  line-height: 23px;
+  font-weight: 700;
+  font-size: 16px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 70px;
+  padding: 5px 24px;
+  z-index: 10;
+}
+
+.homePlayBtnNw a {
+  color: white;
+  text-decoration: none;
+}
+
+.homePlayBtnNw i {
+  margin-left: 5px;
+  vertical-align: middle;
+  padding-bottom: 2px;
+}
+
+.homePlayBtnNw:hover {
+  background-color: #e6b70a;
+  border-color: #e6b70a;
+  transition: all 0.3s ease;
+}
+
+.colms p {
+  margin-top: 7px;
+}
+
+body {
+  overflow: hidden;
+}
+
 @media only screen and (min-width: 1200px) {
   .cardSection .cardSectionMain .firstCard {
     min-height: 330px;
@@ -999,65 +1064,4 @@ footer * {
 
 .emailContact .col-md-6:first-child {
   border-right: 2px solid #f77930;
-}
-
-/* 9-10-2021 Changes By JoeMn */
-
-nav {
-  position: absolute !important;
-  top: 0 !important;
-  background: transparent !important;
-  box-shadow: none;
-}
-
-.navStylesNew {
-  position: sticky !important;
-  background: #323232 !important;
-  transition: all 0.3s ease;
-  box-shadow: rgb(0 0 0 / 60%) -10.5px -5.82px 17px 13px;
-}
-
-.mySwiper1 {
-  position: relative;
-}
-
-.homePlayBtnNw {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%);
-  transform: translateX(-50%);
-  background-color: rgba(255, 58, 45, 0.01);
-  cursor: pointer;
-  color: rgb(255, 255, 255);
-  line-height: 23px;
-  font-weight: 700;
-  font-size: 16px;
-  border-color: rgb(255, 255, 255);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 70px;
-  padding: 5px 24px;
-  z-index: 10;
-}
-
-.homePlayBtnNw a {
-  color: white;
-  text-decoration: none;
-}
-
-.homePlayBtnNw i {
-  margin-left: 5px;
-  vertical-align: middle;
-  padding-bottom: 2px;
-}
-
-.homePlayBtnNw:hover {
-  background-color: #e6b70a;
-  border-color: #e6b70a;
-  transition: all 0.3s ease;
-}
-
-.colms p {
-  margin-top: 7px;
 }
