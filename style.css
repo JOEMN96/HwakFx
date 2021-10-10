@@ -46,12 +46,13 @@
 }
 
 .navbar .navbar-collapse .navbar-nav a {
-  color: #a4a4a4 !important;
+  color: white !important;
   padding: 1.5rem 1rem;
+  font-weight: 500;
 }
 
 .navbar .navbar-collapse .navbar-nav a:hover {
-  color: white !important;
+  color: #a4a4a4 !important;
 }
 
 .navbar .navbar-collapse .navbar-nav .active {
