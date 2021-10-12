@@ -65,40 +65,8 @@ images.forEach((img) => {
   });
 });
 
-// Get all sections that have an ID defined
-// const sections = document.querySelectorAll('section[id]');
-
-// // Add an event listener listening for scroll
-// window.addEventListener('scroll', navHighlighter);
-
-// function navHighlighter() {
-//   let scrollY = window.pageYOffset;
-
-//   sections.forEach((current) => {
-//     const sectionHeight = current.offsetHeight;
-//     const sectionTop = current.offsetTop - 200;
-//     let sectionId = current.getAttribute('id');
-
-//     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-//       sections.forEach((item) => {
-//         document.querySelector('.collapse.navbar-collapse a[href*=' + sectionId + ']')?.classList.add('active');
-//         if (current !== item) {
-//           document
-//             .querySelector('.collapse.navbar-collapse a[href*=' + item.getAttribute('id') + ']')
-//             ?.classList.remove('active');
-//         }
-//       });
-//     } else {
-//       // document.querySelector('.collapse.navbar-collapse a[href*=' + sectionId + ']')?.classList.remove('active');
-//     }
-//   });
-// }
-
-// Get all sections that have an ID defined
 const sections = document.querySelectorAll('section[id]');
 let navItems = document.querySelectorAll('.navbar-nav a ');
-console.log(navItems);
-// Add an event listener listening for scroll
 window.addEventListener('scroll', navHighlighter);
 
 function navHighlighter() {
@@ -113,11 +81,10 @@ function navHighlighter() {
       navItems.forEach((item) => {
         let current = item.getAttribute('href').replace('#', '');
         if (current != sectionId) {
-          console.log('yes');
           item.classList.remove('active');
         }
       });
-      document.querySelector('.navbar-nav a[href*=' + sectionId + ']').classList.add('active');
+      document.querySelector('.navbar-nav a[href*=' + sectionId + ']')?.classList?.add('active');
     } else {
       return;
     }

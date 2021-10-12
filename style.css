@@ -933,6 +933,115 @@ nav {
   margin-top: 7px;
 }
 
+.cardSection h5 {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.cardSection h5::after {
+  content: '';
+  width: 35px;
+  height: 3px;
+  position: absolute;
+  background-color: #f77930;
+  bottom: 5px;
+  left: 49%;
+}
+
+.cardSection .cardSectionMain .col {
+  margin-bottom: 20px;
+}
+
+.cardSection .firstCard {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  --bg-overlay-color: rgb(255, 255, 255);
+  --scale: 1;
+  border-width: 0 0 0 0;
+  border-style: solid solid solid solid;
+  border-color: #b0a986 #b0a986 #b0a986 #b0a986;
+  border-radius: 0 0 0 0;
+  -webkit-box-shadow: 0 4px 10px 0 #d8cccc;
+  box-shadow: 0 4px 10px 0 #d8cccc;
+  overflow: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.card-content p {
+  text-align: center;
+  margin: 5px 0px 5px 0;
+}
+
+.card-content h3 {
+  text-align: center;
+}
+
+.card-content .cardReadBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.card-content .cardReadBtn p {
+  text-align: start;
+}
+
+.card-content .cardReadBtn h3 {
+  color: #f58144;
+}
+
+.card-content .readbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card-content .readbtn button {
+  background: #36b5cd;
+  color: white;
+  border: 0;
+  padding: 7px 16px;
+}
+
+.card-content .readbtn button:hover {
+  background-color: #5dc0d4;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+}
+
+.AdvisorBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.AdvisorBtn button {
+  background: #36b5cd;
+  color: white;
+  border: 0;
+  padding: 7px 10px;
+}
+
+.AdvisorBtn button:hover {
+  background-color: #5dc0d4;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+}
+
 body {
   overflow-x: hidden;
 }
