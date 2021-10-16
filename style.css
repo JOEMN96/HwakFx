@@ -249,7 +249,7 @@ nav {
     font-weight: 400;
   }
   .cardSectionMain > .col-md-4 .firstCard {
-    margin: 0 auto;
+    margin: 20px auto;
   }
 }
 
@@ -312,10 +312,12 @@ nav {
   overflow: hidden;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  margin-bottom: 20px;
 }
 
 .cardSection .firstCard img {
   width: 100%;
+  width: 356px;
 }
 
 .card-content {
@@ -1097,6 +1099,15 @@ body {
   }
   .emailContact .col-md-6:first-child {
     border-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .cardSection .firstCard img {
+    width: 100% !important;
+  }
+  .firstCard {
+    margin-bottom: 20px;
   }
 }
 
