@@ -1042,6 +1042,10 @@ nav {
   transition: ease all 0.5s;
 }
 
+.mySwiper1 {
+  overflow-x: hidden;
+}
+
 body {
   overflow-x: hidden;
 }
