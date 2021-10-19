@@ -10,21 +10,6 @@ var swiper1 = new Swiper('.mySwiper1', {
   },
 });
 
-// var swiper2 = new Swiper(".mySwiper2", {
-//   cssMode: true,
-//   slidesPerView: 1,
-//   spaceBetween: 30,
-//   loop: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-
 window.addEventListener('DOMContentLoaded', () => {
   var swiper3 = new Swiper('.mySwiper3', {
     cssMode: true,
@@ -74,7 +59,7 @@ function navHighlighter() {
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
+    const sectionTop = current.offsetTop - 250;
     let sectionId = current.getAttribute('id');
     if (!sectionId) return;
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
@@ -90,3 +75,16 @@ function navHighlighter() {
     }
   });
 }
+
+navItems.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    navItems.forEach((item) => {
+      if (item.classList.contains('active')) {
+        console.log(item);
+        item.classList.remove('active');
+      }
+    });
+    e.target.classList.add('active');
+    console.log(e.target);
+  });
+});

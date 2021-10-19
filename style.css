@@ -318,6 +318,7 @@ nav {
 .cardSection .firstCard img {
   width: 100%;
   width: 356px;
+  height: 210px;
 }
 
 .card-content {
@@ -1011,6 +1012,11 @@ nav {
   color: white;
   border: 0;
   padding: 7px 16px;
+}
+
+.card-content .readbtn button a {
+  text-decoration: none;
+  color: white;
 }
 
 .card-content .readbtn button:hover {
