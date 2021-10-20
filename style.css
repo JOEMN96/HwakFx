@@ -1054,6 +1054,18 @@ nav {
   overflow-x: hidden;
 }
 
+.extraSpace {
+  padding-bottom: 5px;
+}
+
+.card-content p {
+  color: rgb(87, 112, 131);
+}
+
+.card-content h3 {
+  font-size: 25px;
+}
+
 body {
   overflow-x: hidden;
 }
