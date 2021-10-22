@@ -99,9 +99,6 @@
   .teamSectionCard > div:first-child {
     text-align: center;
   }
-  .contactMail {
-    font-size: 18px !important;
-  }
 }
 
 nav {
@@ -1070,6 +1067,44 @@ body {
   overflow-x: hidden;
 }
 
+.LocationsCard {
+  display: grid;
+  place-items: center;
+}
+
+.LocationsCard img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: revert;
+}
+
+.LocationsCard > div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  align-items: center;
+  background: rgb(249, 249, 249);
+  max-width: 500px;
+  width: 100%;
+}
+
+.LocationsCard > div div {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.LocationsCard a,
+.LocationsCard p {
+  font-family: 'Avenir LT Pro 35 Light';
+  color: #373737;
+  text-decoration: none;
+}
+
+.LocationsCard h3 {
+  margin-top: 10px;
+}
+
 @media only screen and (min-width: 1200px) {
   .cardSection .cardSectionMain .firstCard {
     min-height: 330px;
@@ -1092,9 +1127,6 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .contactMail {
-    font-size: 20px !important;
-  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -1115,8 +1147,10 @@ body {
   footer .container .sec2 {
     padding-left: 30px;
   }
-  .emailContact .col-md-6:first-child {
-    border-right: 0 !important;
+}
+@media only screen and (max-width: 500px) {
+  .LocationsCard > div {
+    flex-direction: column;
   }
 }
 
@@ -1159,7 +1193,7 @@ section {
   left: 48.5%;
 }
 
-.emailContact > div {
+/* .emailContact > div {
   text-align: center;
 }
 
@@ -1172,7 +1206,7 @@ section {
   display: block;
   margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
-}
+} */
 
 footer {
   background: #323232 !important;
@@ -1197,7 +1231,7 @@ footer * {
   font-size: 12px !important;
 }
 
-.emailContact .col-md-6 h3,
+/* .emailContact .col-md-6 h3,
 .emailContact .col-md-12 h3 {
   font-family: 'Adobe Carlson';
   font-size: 24px;
@@ -1207,4 +1241,4 @@ footer * {
 
 .emailContact .col-md-6:first-child {
   border-right: 2px solid #f77930;
-}
+} */
