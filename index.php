@@ -5,7 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Hawks FX</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.3.0/swiper-bundle.css" integrity="sha512-qIQUiWIU8q9GonM2Y5f7dVvB96Ja4TmJWATzNf6oGhkDUIrvWsYLdKURyJ3C8dmoTbZqoiSK02Gw45LKOR2jSg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      @font-face {
+        font-family: swiper-icons;
+        src: url('data:application/font-woff;charset=utf-8;base64, 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')
+          format('woff');
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .swiper-container {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        z-index: 1;
+      }
+      .swiper-container-vertical > .swiper-wrapper {
+        flex-direction: column;
+      }
+      .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        box-sizing: content-box;
+      }
+      .swiper-container-android .swiper-slide,
+      .swiper-wrapper {
+        transform: translate3d(0px, 0, 0);
+      }
+      .swiper-container-multirow > .swiper-wrapper {
+        flex-wrap: wrap;
+      }
+      .swiper-container-multirow-column > .swiper-wrapper {
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      .swiper-container-free-mode > .swiper-wrapper {
+        transition-timing-function: ease-out;
+        margin: 0 auto;
+      }
+      .swiper-container-pointer-events {
+        touch-action: pan-y;
+      }
+      .swiper-container-pointer-events.swiper-container-vertical {
+        touch-action: pan-x;
+      }
+      .swiper-slide {
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition-property: transform;
+      }
+
+      .swiper-container-autoheight .swiper-wrapper {
+        align-items: flex-start;
+        transition-property: transform, height;
+      }
+
+      .swiper-container-css-mode > .swiper-wrapper {
+        overflow: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      .swiper-container-css-mode > .swiper-wrapper::-webkit-scrollbar {
+        display: none;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        width: calc(var(--swiper-navigation-size) / 44 * 27);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--swiper-navigation-color, var(--swiper-theme-color));
+      }
+      .swiper-button-next.swiper-button-disabled,
+      .swiper-button-prev.swiper-button-disabled {
+        opacity: 0.35;
+        cursor: auto;
+      }
+      .swiper-button-next:after,
+      .swiper-button-prev:after {
+        font-family: swiper-icons;
+        font-size: var(--swiper-navigation-size);
+        text-transform: none !important;
+        letter-spacing: 0;
+        text-transform: none;
+        font-variant: initial;
+        line-height: 1;
+      }
+      .swiper-button-prev,
+      .swiper-container-rtl .swiper-button-next {
+        left: 10px;
+        right: auto;
+      }
+      .swiper-button-prev:after,
+      .swiper-container-rtl .swiper-button-next:after {
+        content: 'prev';
+      }
+      .swiper-button-next,
+      .swiper-container-rtl .swiper-button-prev {
+        right: 10px;
+        left: auto;
+      }
+      .swiper-button-next:after,
+      .swiper-container-rtl .swiper-button-prev:after {
+        content: 'next';
+      }
+      .swiper-button-next.swiper-button-white,
+      .swiper-button-prev.swiper-button-white {
+        --swiper-navigation-color: #ffffff;
+      }
+      .swiper-button-next.swiper-button-black,
+      .swiper-button-prev.swiper-button-black {
+        --swiper-navigation-color: #000000;
+      }
+    </style>
     <link rel="stylesheet" href="./assets/files/bootstrap.min.css" />
     <link
       rel="stylesheet"
@@ -16,6 +144,11 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./style.scss" />
+
+    <!-- contact form files -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="main.js"></script>
+    <!-- contact form files end -->
   </head>
   <body>
     <style>
@@ -618,39 +751,36 @@
             Form
       ========================= -->
 
-    <section class="formArea">
-  <div id="frmContact">
-<div id="mail-status"></div>
+    <section id='FormArea' class="formArea">
+      <form id="form">
       <h5 class="headingWithBorder">Leave a question</h5>
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-              <span id="userName-info" class="info"></span><br/>
             <input placeholder="First Name" type="text" name="userName" id="userName" />
           </div>
           <div class="col-md-6">
-               <span class="info"></span><br/>
             <input placeholder="Last Name" type="text" name="lastname" id="lastname" />
           </div>
           <div class="col-md-6">
-              <span id="userEmail-info" class="info"></span><br/>
-            <input placeholder="Contact Email" type="email" name="userEmail" id="userEmail" />
+            <input placeholder="Contact Email" type="email" name="email" id="email" />
           </div>
           <div class="col-md-6">
-              <span id="subject-info" class="info"></span><br/>
-            <input placeholder="Phone" type="text" name="Subject" id="Subject" />
+            <input placeholder="Phone" type="text" name="subject" id="subject" />
           </div>
         </div>
         <div class="col-md-12">
-            <span id="content-info" class="info"></span><br/>
-          <textarea placeholder="Subject" name="content" id="content"></textarea> <br />
+          <textarea placeholder="Message" name="message" id="message"></textarea> <br />
           
-          <button name="submit" class="btnAction" onClick="sendContact();">Send</button>
+          <button name="submit" id="submit">Send</button>
 
         </div>
       </div>
 
     </div>
+    <label id="loader"></label>
+      <label id="info"></label>
+    </form>
         </section>
 
     <!-- ======================
@@ -702,61 +832,11 @@
         </div>
       </div>
     </footer>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.3.0/swiper-bundle.min.js" integrity="sha512-Po1Cm7OHYQ6orafFjYOrso8wtC00KfAEioYH/CL+2PMSt+ZQulMWRL3tHI4plhLs+i7vxHIPMkqw/VnjWXX6TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <script>
-        function sendContact() {
-    var valid;	
-    valid = validateContact();
-    if(valid) {
-        jQuery.ajax({
-            url: "contact_mail.php",
-            data:'userName='+$("#userName").val()+'&userEmail='+
-            $("#userEmail").val()+'&subject='+
-            $("#subject").val()+'&content='+
-            $(content).val(),
-            type: "POST",
-            success:function(data){
-                $("#mail-status").html(data);
-            },
-            error:function (){}
-        });
-    }
-}
+<!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js" integrity="sha512-jm5exnXjOC6mBpqBG81xU+GK4ybKq28mLihDCNj2E3RkzrfW/tSGt7Uy7wRSkedl95C4cH9+9lectBCGwEcD0g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-function validateContact() {
-    var valid = true;	
-    $(".demoInputBox").css('background-color','');
-    $(".info").html('');
-    if(!$("#userName").val()) {
-        $("#userName-info").html("(required)");
-        $("#userName").css('background-color','#FFFFDF');
-        valid = false;
-    }
-    if(!$("#userEmail").val()) {
-        $("#userEmail-info").html("(required)");
-        $("#userEmail").css('background-color','#FFFFDF');
-        valid = false;
-    }
-    if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
-        $("#userEmail-info").html("(invalid)");
-        $("#userEmail").css('background-color','#FFFFDF');
-        valid = false;
-    }
-    if(!$("#subject").val()) {
-        $("#subject-info").html("(required)");
-        $("#subject").css('background-color','#FFFFDF');
-        valid = false;
-    }
-    if(!$("#content").val()) {
-        $("#content-info").html("(required)");
-        $("#content").css('background-color','#FFFFDF');
-        valid = false;
-    }
-    return valid;
-}
-    </script>
+    
+   
     
     
     <script src="./assets/files/bootstrap.min.js"></script>

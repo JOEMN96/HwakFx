@@ -12,10 +12,10 @@ var swiper1 = new Swiper('.mySwiper1', {
 
 window.addEventListener('DOMContentLoaded', () => {
   var swiper3 = new Swiper('.mySwiper3', {
-    cssMode: true,
     slidesPerView: 3.5,
     spaceBetween: 10,
     loop: true,
+    autoplay: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -80,7 +80,6 @@ navItems.forEach((item) => {
   item.addEventListener('click', (e) => {
     navItems.forEach((item) => {
       if (item.classList.contains('active')) {
-        console.log(item);
         item.classList.remove('active');
       }
     });

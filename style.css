@@ -1085,8 +1085,12 @@ body {
   padding: 10px;
   align-items: center;
   background: rgb(249, 249, 249);
-  max-width: 500px;
+  max-width: 550px;
   width: 100%;
+}
+
+.LocationsCard i {
+  margin: 0 5px;
 }
 
 .LocationsCard > div div {
